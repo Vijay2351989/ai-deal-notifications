@@ -1,6 +1,6 @@
 # Deal Notifications
 
-A proprietary <span style="color:neongreen">**fine-tuned LLM**</span> deployed on Modal and a **RAG pipeline with a frontier model** collaborate to send push notifications with great online deals.
+A proprietary <span style="color:green">**fine-tuned LLM**</span> deployed on Modal and a **RAG pipeline with a frontier model** collaborate to send push notifications with great online deals.
 
 ## Before you begin
 
