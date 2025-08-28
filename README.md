@@ -1,6 +1,6 @@
 # Deal Notifications
 
-A proprietary **fine-tuned LLM** deployed on Modal and a **RAG pipeline with a frontier model** collaborate to send push notifications with great online deals.
+A proprietary <span style="color:neongreen">**fine-tuned LLM**</span> deployed on Modal and a **RAG pipeline with a frontier model** collaborate to send push notifications with great online deals.
 
 ## Before you begin
 
@@ -30,7 +30,7 @@ This agent is responsible for predicting the price of the product based on its d
 
 This agent is again predicting the price of a product; but with a different approach. It uses the training dataset mentioned in specialist agent section to. create a **vector store using chroma db**. 
 
-**Vector store uses the open source embedding model : **
+**Vector store uses the open source embedding model :**
 [The all-MiniLM is a very useful model from HuggingFace that maps sentences & paragraphs to a 384 dimensional dense vector space and is ideal for tasks like semantic search.](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
 
  The vector store is then used to set a **RAG pipeline** to retrieve price of product semantically closer to the product description and pass it as an extra context to the frontier model (gpt-4o-mini). This approach gives extra power to the frontier model to predict the price of the product based on the context set in prompt.
