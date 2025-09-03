@@ -1,6 +1,6 @@
 # Deal Notifications
 
-A proprietary <span style="color:green">**fine-tuned LLM**</span> deployed on Modal and a **RAG pipeline with a frontier model** collaborate to send push notifications with great online deals.
+A proprietary **fine-tuned LLM** deployed on Modal and a **RAG pipeline with a frontier model** collaborate to send push notifications with great online deals.
 
 ## Before you begin
 
@@ -40,6 +40,20 @@ This agent is again predicting the price of a product; but with a different appr
 What better to bring in a **baseline model ramdom forest aggressor from scikit** and fit it to the prices of the trained data in chroma vectorstore mentioned above. This is exactly what this agent uses. It again predict price of product but the model used is a random forest model trained on the product vectorstore created using the chromadb.
 
 ## Messaging Agent
+
+Messaging agent is responsible for sending the push notification alert to the configured user informing about the best deal. It is a normal python agent (not an LLM agent) using pushover or twilio account to push notification. Once the best deals has been evaluated by the ensemble agent; it is passed to the messaging agent to send the push notification.
+
+## Planning Agent
+
+Planning agent is responsible for orchestrating the flow of the program. It is used as an entry point to the program and collaborating all the other agent to get the desired output. It first uses the scanner agent to get the best 5 deals from the feed. Then it uses the ensemble agent to predict the price of the product in the best 5 deals using its product description. Finally it uses the messaging agent to send the push notification alert to the configured user about the best deal among the 5 deals based on best discount.
+
+## Deal Agent Framework
+
+Deal agent framework is responsible for maintaining the logging, memory and monitoring aspect of the project. It maintains the logging, memory, data plotting and monitoring aspect of the project. 
+
+## App UI
+
+Gradio UI is responsible for providing a frontend to the user to see the list of deals the program captures; and to make it autonomous we have a ui schedule which runs the program every scheduled interval.
 
 
 
