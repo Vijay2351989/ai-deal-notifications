@@ -19,17 +19,17 @@
 2. Create a .env file in the root directory of the project.
 
 3. [Set up open api key](https://platform.openai.com/api-keys). Add the key to the .env file as \
-   **OPENAI_API_KEY=<<your-key>>**
+   **OPENAI_API_KEY=\<your-key\>**
 
 4. [Set up hugging face token](https://huggingface.co/settings/tokens). Add the token to the .env file as \
-   **HF_TOKEN=<your-token>**
+   **HF_TOKEN=\<your-token\>**
 
 5. [Set up pushover account for push notifications](https://pushover.net/)
    a. Once you set up your account you will get a pushover user key. Add it to the .env file as \
-      **PUSHOVER_KEY=<your-key>**
+      **PUSHOVER_KEY=\<your-key\>**
    
    b. You will also need to create an application. Add the application token to the .env file as \
-      **PUSHOVER_TOKEN=<your-token>**
+      **PUSHOVER_TOKEN=\<your-token\>**
 
 6. For envrionment variable to take effect you will need to reactivate the environment. \
    `conda activate pricer`
