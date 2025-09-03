@@ -19,7 +19,7 @@
 2. Create a .env file in the root directory of the project.
 
 3. [Set up open api key](https://platform.openai.com/api-keys). Add the key to the .env file as \
-   **OPENAI_API_KEY=<your-key>**
+   **OPENAI_API_KEY=<<your-key>>**
 
 4. [Set up hugging face token](https://huggingface.co/settings/tokens). Add the token to the .env file as \
    **HF_TOKEN=<your-token>**
@@ -56,25 +56,25 @@
 `modal token set --token-id <your_token_id> --token-secret <your_token_secret>` 
 
 # Fine tune LLM deployment in modal
-To deploy the fine tuned LLM in modal we need to run below command at the command line in an activated environment 
+To deploy the fine tuned LLM in modal we need to run below command at the command line in an activated environment \
 `modal deploy -m pricer_service`
 
 Once the above command run successfully you will be able to see a deployed service in your modal dashboard under Apps section as a live app. (price-predictor-service)
 
 # Create vector datastore
-To create the vector datastore run below command at the command line in an activated environment
+To create the vector datastore run below command at the command line in an activated environment \
 `python create_vector_store.py`
 
 # Create random forest model
-To create the random forest model run below command at the command line in an activated environment
+To create the random forest model run below command at the command line in an activated environment \
 `python create_random_forest_model.py`
 
 # Create ensembel model
-To create the ensembel model run below command at the command line in an activated environment
+To create the ensembel model run below command at the command line in an activated environment \
 `python create_ensemble_model.py`
 
 # Start the app
-To start the app run below command at the command line in an activated environment
+To start the app run below command at the command line in an activated environment \
 `python run app.py`
 
 
