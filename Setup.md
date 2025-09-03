@@ -7,9 +7,9 @@
 3. Install anaconda
 
 ## Activate environment
-4. Set up anaconda environment using environment.yml file
+4. Set up anaconda environment using environment.yml file 
    `conda env create -f environment.yml` (This will create a conda env with anme pricer)
-5. Activate the environment
+5. Activate the environment 
    `conda activate pricer`
 
 
