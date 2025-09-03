@@ -7,9 +7,9 @@
 3. Install anaconda
 
 ## Activate environment
-4. Set up anaconda environment using environment.yml file 
-   `conda env create -f environment.yml` (This will create a conda env with anme pricer)
-5. Activate the environment 
+4. Set up anaconda environment using environment.yml file \
+   `conda env create -f environment.yml` (This will create a conda env with name pricer)
+5. Activate the environment \
    `conda activate pricer`
 
 
@@ -18,20 +18,20 @@
 1. For the project to run end to end we will need some api keys to be configured in .env file.
 2. Create a .env file in the root directory of the project.
 
-3. [Set up open api key](https://platform.openai.com/api-keys). Add the key to the .env file as
+3. [Set up open api key](https://platform.openai.com/api-keys). Add the key to the .env file as \
    **OPENAI_API_KEY=<your-key>**
 
-4. [Set up hugging face token](https://huggingface.co/settings/tokens). Add the token to the .env file as 
+4. [Set up hugging face token](https://huggingface.co/settings/tokens). Add the token to the .env file as \
    **HF_TOKEN=<your-token>**
 
 5. [Set up pushover account for push notifications](https://pushover.net/)
-   a. Once you set up your account you will get a pushover user key. Add it to the .env file as 
+   a. Once you set up your account you will get a pushover user key. Add it to the .env file as \
       **PUSHOVER_KEY=<your-key>**
    
-   b. You will also need to create an application. Add the application token to the .env file as 
+   b. You will also need to create an application. Add the application token to the .env file as \
       **PUSHOVER_TOKEN=<your-token>**
 
-6. For envrionment variable to take effect you will need to reactivate the environment. 
+6. For envrionment variable to take effect you will need to reactivate the environment. \
    `conda activate pricer`
 
 ## [Set up modal](https://modal.com)
